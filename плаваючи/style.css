@@ -1,0 +1,88 @@
+/* Загальні стилі */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.block {
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+/* Контейнер на весь екран */
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+/* Шапка та Підвал */
+.header, .footer {
+    flex-shrink: 0; /* Не стискати */
+    color: white;
+    text-align: center;
+}
+
+.header {
+    background-color: #0d6efd;
+}
+
+.footer {
+    background-color: #6c757d;
+}
+
+/* Обгортка для контенту */
+.content-wrapper {
+    display: flex;
+    flex-grow: 1; /* Займає весь доступний простір */
+}
+
+/* Бічні панелі */
+.sidebar {
+    background-color: #ffc107;
+    text-align: center;
+}
+
+.sidebar-left {
+    width: 20%;
+}
+
+.sidebar-right {
+    width: 20%;
+}
+
+/* Основний контент */
+.main-content {
+    width: 60%;
+    background-color: #ffffff;
+    color: #333;
+    text-align: center;
+}
+
+/* Навігація в бічних панелях */
+.side-nav h2 {
+    margin-top: 0;
+}
+.side-nav ul {
+    list-style: none;
+    padding: 0;
+}
+.side-nav li {
+    margin-bottom: 10px;
+}
+.side-nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Зображення */
+.content-image {
+    max-width: 200px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
